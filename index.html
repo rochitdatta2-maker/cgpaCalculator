@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diploma CGPA Calculator (BTEB)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <header>
+      <h1>Diploma CGPA Calculator</h1>
+      <p>Select BTEB Regulation and enter your GPA for each semester.</p>
+    </header>
+
+    <div class="regulation-selector">
+      <label for="regulation">Regulation:</label>
+      <select id="regulation">
+        <option value="2010">2010</option>
+        <option value="2016" selected>2016</option>
+        <option value="2022">2022</option>
+      </select>
+    </div>
+
+    <form id="gpaForm" class="gpa-form">
+      <!-- Semester cards injected by JS -->
+    </form>
+
+    <div class="buttons">
+      <button id="calculateBtn" class="btn primary">Calculate CGPA</button>
+      <button id="resetBtn" class="btn secondary">Reset</button>
+    </div>
+
+    <div id="result" class="result"></div>
+
+    <footer>
+      <small>Uses official BTEB semester weightage. Source: BTEB regulations.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
